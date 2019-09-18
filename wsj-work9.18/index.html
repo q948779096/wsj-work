@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+<style></style>
+</head>
+<body>
+    
+    <input type="text" id="c1" value="" >
+    +
+    <input type="text" id="c2" value="" >
+    <button id="btn">点击计算<button>
+    <div id="show" >输出的答案</div>
+<script>
+    var show = document.getElementById('show');
+    var c1 = document.getElementById('c1');
+    var c2 = document.getElementById('c2');
+    var btn = document.getElementById('btn');
+     btn.onclick = function(){
+         if(c1.value %1 == 0 && c2.value %1 == 0){
+         console.log('输出的答案'+parseInt(c1.value)+parseInt(c2.value))
+         show.innerHTML = parseInt(c1.value)+parseInt(c2.value);
+         }else{
+             alert('请输入整数')
+         }
+     }
+</script>
+</body>
+<html>
