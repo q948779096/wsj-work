@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var ka = Number(prompt("请输入您的银行卡账号"));
+			var pwd = Number(prompt("请输入您的银行卡密码"));
+			var kahao = 123456789;
+			var pw = 123456;
+			var kayue = 10000;
+			if(ka == kahao &&pwd == pw){
+				alert("登陆成功");
+				alert("卡中余额为:10000");
+				var qk = parseInt(prompt("您取款的金额为:"));
+				if(qk>kayue){
+					alert("卡中余额不足")
+				}else{
+					alert("成功取款:"+qk);
+					alert("卡中余额为:"+(kayue-qk));
+				}
+			}else{
+				alert("卡号或者密码错误,请重试");
+			}
+		</script>
+	</body>
+</html>
