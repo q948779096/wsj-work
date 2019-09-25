@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				position: relative;
+			}
+			#box>div{
+				width: 50px;
+				height: 50px;
+				
+				position: absolute;
+				transform: 0.5s;
+				background-image: url(../img/1.jpg);
+				opacity: 0 ;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<script>
+			//要一个10行10列的大表格 50*50
+			var box = document.getElementById('box');
+			for(var i=0;i<12;i++){
+				for(var j=0;j<10;j++){
+				var div = document.createElement('div');
+				box.appendChild(div);
+				div.style.top = i * 50 +'px';
+				div.style.left = j *50 +'px';
+				
+				div.style.backgroundPositionY = i * -50+'px';
+				div.style.backgroundPositionX = j * -50+'px';
+				
+				div.onmousemove= function(){
+					this.style.opacity = 1;
+				}
+				}
+			}
+		</script>
+	</body>
+</html>
