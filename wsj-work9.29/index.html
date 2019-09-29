@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<label>账户:</label>
+		<input type="text" id="c1" placeholder="请输入用户名"/>
+		<span id="span1"></span>
+		<br />
+		<label>密码:</label>
+		<input type="password" id="c2" placeholder="请输入密码" />
+		<span id="span2"></span>
+		<br />
+		<button id="btn">立即注册<tton>
+		<script>
+			var c1 = document.getElementById('c1');
+			var c2 = document.getElementById('c2');
+			var btn = document.getElementById('btn');
+			var a = ['tom','jack','lili'];
+			
+		
+			
+			c2.onblur = function(){
+				if(c2.value==''){
+					span2.innerText = '请输入密码';
+				}else{
+					span2.innerText = '';
+				}
+			}
+			c1.onblur=function(){
+				span1.innerHTML="";
+			}
+			btn.onclick=function(){
+				if(c1.value==''){
+					span1.innerHTML = '账号不能为空';
+				}else if(c1.value ==a[0]||c1.value ==a[1]||c1.value ==a[2]){
+					span1.innerHTML ='用户名重复';
+				}else if(c2.value==''){
+					span2.innerHTML = '密码不能为空';
+				}else{
+					c1.value="";
+					c2.value="";
+					span1.innerHTML="";
+					span2.innerHTML="";
+					alert('注册成功');
+				}
+			}
+			
+			
+			
+		</script>
+	</body>
+<html>
