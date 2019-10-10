@@ -1,0 +1,128 @@
+.wrap-one .navbar{
+	background-color: #333333;
+	/*height: 60px;*/
+}
+.wrap-one .navbar>.center>.btn{
+	width: 255px;
+	height: 60px;
+	float: left;
+}
+
+.wrap-one .navbar>.center>.btn button{
+	width: 100%;
+	border-width: 0;
+	background-color: #73B320;
+	color: #fff;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 60px;
+	
+}
+.wrap-one .navbar .center>.btn button:hover{
+	background-color: #39b0ff;
+	transition: 1s;
+}
+.wrap-one .navbar .center > .nav{
+	height: 60px;
+}
+.wrap-one .navbar .center > .nav>ul>li:nth-child(1){
+	margin-left: 15px;
+}
+.wrap-one .navbar .center > .nav>ul>li{
+	float: left;
+	font-size: 14px;
+	position: relative;
+	
+}
+.wrap-one .navbar .center > .nav>ul>li>a{
+	display: block;
+	padding: 19px 30px;
+	color: #fff;
+}
+.wrap-one .navbar .center > .nav>ul li>a:hover{
+	background-color: #454545;
+	transition: 0.5s;
+}
+.wrap-one .navbar .center > .nav>ul li a i{
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-right:2px solid #fff;
+	border-bottom:2px solid #fff;
+	margin-left: 2px;	
+	transform:  rotate(45deg) translateY(-4px);
+}
+.wrap-one .navbar .center > .nav ul li .home>li{
+	
+}
+.wrap-one .navbar .center > .nav ul li .home>li a{
+	width: 170px;
+	height: 50px;
+	display: block;
+	line-height: 50px;
+	padding: 0px 28px;
+	color: #FFF;
+}
+.wrap-one .navbar .center > .nav ul li .home{
+	position: absolute;
+	top:58px;
+	background-color: #333333;
+	display: none;
+	z-index: 20;
+}
+.wrap-one .navbar .center > .nav ul li:hover > .home{
+	display: block;
+}
+
+.wrap-one .navbar .center >.nav>ul>.shop{
+	position: relative;
+}
+/***********************************/
+.navbar .center>.nav>ul>li>.big{
+	position:absolute;
+    background-color:#333333;
+    display:none;
+    z-index: 20;
+    left: -120px;
+    top: 60px;
+}
+.navbar .center>.nav>ul>li:nth-child(3)>.big{
+	width:540px;
+}
+.navbar .center>.nav>ul>li:nth-child(4)>.big{
+	width:450px;
+}
+.navbar .center>.nav>ul>li>.big>li>ul{
+	float: left;
+}
+.navbar .center>.nav>ul>li>.big>li>ul>li{
+	width:100%;
+	height: 30px;
+	color: #FFFFFF;
+	line-height: 30px;
+	padding:0 10px;
+	box-sizing:border-box;
+	margin-left: 10px;
+}
+.navbar .center>.nav>ul>li>.big>li>ul>li a{
+	font-size: 12px;
+	color: #fff;
+}
+.navbar .center>.nav>ul>li>.big>li>ul>li a:hover{
+	color: #73B320;
+	background-color: rgba(0,0,0,0);
+	transform: 1s;
+}
+.navbar .center>.nav>ul>li>.big>li>ul>li a span{
+	color: #73B320;
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	text-align: left;
+	border-bottom: 1px solid #BFBFBF;
+}
+.wrap-one .navbar .center >.nav>ul>.shop:hover > ul{
+	display: block;
+}

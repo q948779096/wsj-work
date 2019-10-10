@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+.head{
+	width: 1900px;
+	height: 170px;
+}
+#head1{
+	width: 1540px;
+	height: 170px;
+}
+#nav1{
+	width: 1540px;
+	height:60px;
+}
+#banner1{
+	width: 1540px;
+	height: 630px;
+	margin-top: -5px;
+}
+#information1{
+	width: 1540px;
+	height: 2000px;
+}
+#footer1{
+	width: 1540px;
+	height: 500px;
+}

@@ -1,0 +1,185 @@
+
+
+/*********************************/
+.head {
+    background-color: #3b4348;
+}
+
+.head > .nav {
+    font-size: 13px;
+    padding: 15px 0;
+    height: 25px;
+    border-bottom: 1px solid #525d64;
+}
+.head > .nav .call {
+    float: left;
+}
+.head > .nav .call li {
+    float: left;
+    margin-right: 30px;
+}
+.head > .nav .call li a {
+    display: block;
+   
+}
+.head > .nav .call li a > div {
+    float: left;
+    padding: 6px;
+    background-color: #39b0ff;
+    margin-right: 10px;
+}
+.head > .nav .call li a > div > i {
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.head > .nav .call li:nth-child(1) a > div > i {
+    background-image: url(img/header/icon/dianhua.png);
+}
+.head > .nav .call li:nth-child(2) a > div > i {
+    background-image: url(img/header/icon/xinfeng.png);
+}
+
+.head > .nav .call li a > h6 {
+    float: left;
+    color: white;
+    line-height: 25px;
+    margin-right: 5px;
+ 
+}
+.head > .nav .call li a > span {
+    float: left;
+    color: #bfbfbf;
+    line-height: 25px;
+}
+.head > .nav .call li a:hover > h6 {
+    color:#73b320;
+    transition: 1s;
+}
+.head > .nav .call li a:hover > span {
+    color:#fff;
+    transition: 1s;
+}
+.head > .nav .call li a:hover > div {
+    background-color: #fff;
+    transition: 1s;
+}
+.head > .nav .call li:nth-child(1) a:hover > div i {
+    background-image: url(img/header/icon/dianhua0.png);
+    transition: 1s;
+}
+.head > .nav .call li:nth-child(2) a:hover > div i {
+    background-image: url(img/header/icon/xinfeng0.png);
+    transition: 1s;
+}
+.head > .nav .menu {
+   float: right;
+}
+.head > .nav .menu > li {
+    float: left;
+    padding-left: 20px;
+    position: relative;
+}
+.head > .nav .menu a{
+    color: #bfbfbf;
+    line-height: 25px;
+}
+.head > .nav .menu a:hover {
+    color: white;
+    transition: color 1s;
+}
+.head > .nav .menu a i {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg) translateY(-3px);
+    border-right:2px solid #bfbfbf; 
+    border-bottom:2px solid #bfbfbf; 
+}
+.head > .nav .menu li > ul {
+    position: absolute;
+    background-color: #262626;
+    width: 100px;
+    right: 0;
+    top:25px;
+    display: none;
+    z-index: 20;
+}
+.head > .nav .menu li:hover > ul {
+    display: block;
+}
+.head > .nav .menu li > ul > li {
+    width: 100px;
+    line-height: 2;
+    text-align: center;
+}
+.head > .nav .menu li > ul a {
+    color: white;
+}
+/****************************************/
+.head .search {
+    height: 60px;
+    padding: 30px 0;
+}
+.head .search > div > img {
+    margin-top: 7px;
+    float: left;
+}
+.head .search .search-area {
+    width: 572px;
+    height: 60px;
+    float: left;
+    margin-left: 120px;
+}
+.head .search .search-area input {
+    display: block;
+    float: left;
+    width: 512px;
+    border-width: 0;
+    height: 60px;
+    outline: none;
+    font-size: 16px;
+    padding:0 20px;
+    box-sizing: border-box;
+}
+.head .search .search-area > div {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-color: #39b0ff;
+}
+.head .search .search-area > div img {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+}
+.head .search button {
+    width: 144px;
+    height: 60px;
+    background-color: #73b320;
+    color: white;
+    font-size: 16px;
+    float: right;
+    border-width: 0;
+    position: relative;
+    
+}
+.head .search button i{
+    position: absolute;
+    top:14px;
+    right: 34px;
+    width: 18px;
+    height: 18px;
+    font-style: normal;
+    line-height: 20px;
+    border-radius: 50%;
+    font-size: 13px;
+    background-color: #3b4348;
+    color: #fff;
+}
+.head .search button:hover {
+    transition: background-color 1s;
+    background-color: #39b0ff;
+}

@@ -1,0 +1,84 @@
+.banner {
+    width: 100%;
+}
+.banner .bg-pic {
+    width: 100%;
+    height: 630px;
+    overflow: hidden;
+}
+.banner .bg-pic > ul {
+    width: 400%;
+    animation: 20s scroll infinite;
+}
+.banner .bg-pic > ul > li {
+    width: 25%;
+    height: 630px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner .bg-pic > ul > li:nth-child(1){
+    background-image: url('img/banner/slider-img-1.jpg');
+}
+.banner .bg-pic > ul > li:nth-child(2){
+    background-image: url('img/banner/slider-img-2.jpg');
+}
+.banner .bg-pic > ul > li:nth-child(3){
+    background-image: url('img/banner/slider-img-3.jpg');
+}
+.banner .bg-pic > ul > li:nth-child(4){
+    background-image: url('img/banner/slider-img-1.jpg');
+}
+
+@keyframes scroll{
+    0%,25%{margin-left: 0%;}
+    25%,50%{margin-left: -100%;}
+    50%,75%{margin-left: -200%;}
+    75%,100%{margin-left: -300%;}
+}
+.banner .bg-pic  {
+    position: relative;
+}
+.banner .bg-pic .direction {
+    width: 100%;
+    height: 44px;
+    position: absolute;
+    top:35%;
+    z-index: 10;
+}
+.banner .bg-pic .direction > div {
+    width: 43px;
+    height: 43px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.banner .bg-pic .direction .left {
+    float: left;
+    margin-left: 20px;
+
+}
+.banner .bg-pic .direction .left i {
+    transform:rotate(135deg);
+    margin-left: 18px;
+}
+.banner .bg-pic .direction .right {
+    float: right;
+    margin-right: 20px;
+  
+}
+.banner .bg-pic .direction .right i {
+    transform:rotate(-45deg);
+    margin-left: 14px;
+}
+.banner .bg-pic .direction i {
+    margin-top:16px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right:2px solid #bfbfbf; 
+    border-bottom:2px solid #bfbfbf; 
+}
+.banner .bg-pic .direction > div:hover {
+    background-color: #73b320;
+    border-color: #73b320;
+}

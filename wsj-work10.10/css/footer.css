@@ -1,0 +1,159 @@
+.cftop{
+	width: 100%;
+	
+	background-color: #3B4348;
+	padding: 30px 0;
+	margin-left: 
+}
+.ftop{
+	
+	color: #fff;
+}
+.ftop>img{
+	margin-right:15px;
+}
+.ftop h3{
+	display: inline-block;
+}
+.ftop .ftopt{
+	display: inline-block;
+	margin-left: 25px;
+}
+.ftop .ftopt .ftopform>input{
+	padding: 16px  210px 16px 50px;
+}
+.ftop .ftopt .ftopform>button{
+	display: inline-block;
+	padding: 18px 23px;
+	background-color: #73B320;
+	border-width: 0;
+	margin-left: -5px;
+	color: #fff;
+}
+.ftop .ftopt .ftopform>button:hover{
+	transition: 0.7s;
+	background-color:#39B0FF;
+}
+.count{
+	float:right
+}
+.count i{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius:50% ;
+	background-color: #0077b5;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.footers{
+	width: 100%;
+	background-color: #313131;
+}
+.footers div>ul{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: nowrap;
+}
+.footers div>ul>li>ul>li:nth-child(1){
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+.footers div>ul>li>ul>li{
+	padding: 10px 0;
+	font-size: 13px;
+	
+}
+.footers div>ul>li>ul>li>h3{
+	color: #fff;
+	display: inline-block;
+	font-size: 17px;
+}
+.footers div>ul>li>ul>li>a>span{
+	margin-right: 10px;
+}
+.footers div>ul>li>ul>li>a{
+	color: #adadad;
+}
+/**/
+.center>ul{
+	padding-bottom: 60px;
+}
+.center>ul>li{
+	width: 218px;
+}
+.cu li>a>div{
+	display: inline-block;
+}
+.cu li>a>h6{
+	float: right;
+	color: #fff;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-left: 8px;
+}
+.cu li:nth-child(3)>a>h6{
+	width: 60px;
+}
+.cu li >a>div>i{
+	width: 27px;
+	height: 27px;
+	display: block;
+	background-color: #39B0FF;
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position:6px 6px;
+}
+.cu li:nth-child(3)>a>div>i{
+	background-image: url(../img/header/icon/xinfeng.png);
+}
+.cu li:nth-child(3)>a:hover h6{
+	transition: 0.7s;
+	color: #73B320;
+}
+.cu li:nth-child(3)>a:hover>div>i{
+	background-color: #fff;
+	transition: 0.7s;
+	background-image: url(../img/header/icon/xinfeng0.png);
+}
+.cu li>a>span{
+	float:right;
+	padding-top: 6px;
+	padding-left: 3px;
+}
+.cu li:nth-child(3)>a:hover>span{
+	transition: 0.7s;
+	color:#fff;
+}
+.cu li:nth-child(2)>a:hover>span{
+	transition: 0.7s;
+	color:#fff;
+}
+.cu li:nth-child(2)>a>div>i{
+	background-image: url(../img/header/icon/dianhua.png);
+}
+.cu li:nth-child(2)>a:hover h6{
+	transition: 0.7s;
+	color: #73B320;
+}
+.cu li:nth-child(2)>a:hover>div>i{
+	background-color: #fff;
+	transition: 0.7s;
+	background-image: url(../img/header/icon/dianhua0.png);
+}
+.center>ul>li:nth-child(1)>ul>li:hover a,.center>ul>li:nth-child(2)>ul>li:hover a,.center>ul>li:nth-child(3)>ul>li:hover a {
+	margin-left: 10px;
+	color: #39B0FF;
+	transition: 0.8s;
+}
+/***********************/
+.fbottom{
+	width: 100%;
+	background-color: #262626;
+}
+.fbottom p{
+	text-align: center;
+	color: #adadad;
+	font-size: 14px;
+	padding: 24px 0;
+}

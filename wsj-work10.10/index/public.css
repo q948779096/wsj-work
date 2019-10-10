@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body,.wrap{
+    width: 100%;
+}
+
+
+.center{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 清楚浮动 */
+.clearFloat:after{
+    contain: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+.clearFloat{
+    zoom: 1;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
