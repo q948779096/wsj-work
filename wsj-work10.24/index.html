@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<input type="text" id="txt" placeholder="请输入姓名" />
+		<input type="button" id="btn" value="签到">
+		<div id="div">
+
+		</div>
+		<script>
+			var arr = ['李静', '王帅杰', '曹宇航', '窦庆圣', '关鸿祥'];
+			var txt = document.getElementById('txt');
+			var btn = document.getElementById('btn');
+			var div = document.getElementById('div');
+			var narr = [];
+			btn.onclick = function() {
+				if(txt.value != arr[arr.indexOf(txt.value)]) {
+					alert("您不是我们公司人员，请重新输入。")
+				} else {
+					if(narr.length >= arr.length) {
+						alert("全部签到");
+
+					} else {
+						alert("已签到");
+						narr.push(txt.value);
+					}
+				}
+				if(narr.length != arr.length) {
+
+					div.innerHTML = ("还有" + (arr.length - narr.length) + "位未签到");
+				} else {
+					div.innerHTML = "全部签到完毕";
+				}
+
+			}
+		</script>
+	</body>
+
+</html>
