@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<script src="jquery.min.js"></script>
+	</head>
+	<body>
+		<table border="2">
+			<tr>
+				<td>手机品牌</td>
+				<td>数量</td>
+				<td>单价</td>
+				<td>合计</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<input type="checkbox" class="ch1"  />
+					<label>华为mate 20pro</label>
+				</td>
+				<td>
+					<input type="button" class="btn1" value="+"/>
+					<span class="span1">0</span>
+					<input type="button" class="btn2" value="-" />
+				</td>
+				<td>
+					<span class="jg1">3999</span>
+				</td>
+				<td class="hj1"></td>
+			</tr>
+			
+			<tr>
+				<td>
+					<input type="checkbox" class="ch2"  />
+					<label>小米8尊享版</label>
+				</td>
+				<td>
+					<input type="button" class="btn3" value="+"/>
+					<span class="span2">0</span>
+					<input type="button" class="btn4" value="-" />
+				</td>
+				<td>
+					<span class="jg2">3999</span>
+				</td>
+				<td class="hj2"></td>
+			</tr>
+		</table>
+		<div class="div">
+			
+		</div>
+		<script>
+		  
+		$(".ch1").change(function(){
+          
+            if($(".ch1").prop('checked')==true){
+            	$(".btn1").click(function(){
+				//点击加号 数字加一  .next找段落后的同辈元素     .html返回()元素
+				
+				$(this).next().html(parseInt($(this).next().html())+1);
+				var Number1 = $(this).next().html();
+				//价格的变化
+				var dj1 = $(this).next().html()*$(".jg1").text();
+				console.log(dj1);
+				$(".hj1").html(dj1);
+				$(".div").html("合计"+dj1+"元");
+				$(".div").html("[华为mate 20pro]共计"+Number1+"件"+"合计"+dj1+"元");
+				
+			})
+            $(".btn2").click(function(){
+            $(this).prev().html(parseInt($(this).prev().html())-1);
+            var Number2 = $(this).prev().html();
+           if(Number2<=0){
+             $(".span1").html(0);
+           }
+           var dj1 = $(this).prev().html()*$(".jg1").text();
+				console.log(dj1);
+				$(".hj1").html(dj1);
+				$(".div").html("[华为mate 20pro]共计"+Number2+"件"+"合计"+dj1+"元");
+            })
+            }else{
+            	
+            }
+          }) 
+	
+		$(".ch2").change(function(){
+			if($(".ch2").prop('checked')==true){}
+			 $(".btn3").click(function(){
+				//点击加号 数字加一  .next找段落后的同辈元素     .html返回()元素
+				
+				$(this).next().html(parseInt($(this).next().html())+1);
+				var Number1 = $(this).next().html();
+				//价格的变化
+				var dj2 = $(this).next().html()*$(".jg2").text();
+				console.log(dj2);
+				$(".hj2").html(dj2);
+				$(".div").html("[小米8尊享版]共计"+Number1+"件"+"合计"+dj2+"元");
+				
+				
+			})
+            $(".btn4").click(function(){
+            $(this).prev().html(parseInt($(this).prev().html())-1);
+            var Number2 = $(this).prev().html();
+           if(Number2<=0){
+             $(".span2").html(0);
+           }
+           var dj2 = $(this).prev().html()*$(".jg2").text();
+				console.log(dj2);
+				$(".hj2").html(dj2);
+				$(".div").html("[小米8尊享版]共计"+Number2+"件"+"合计"+dj2+"元");
+            })
+		})
+		
+		 	
+	
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery.min.js" ></script>
+	</head>
+	<body>
+		<input type="checkbox" name="che" id="quan"/>all <br />
+		<input type="checkbox" name="ball"/>足球
+		<input type="checkbox" name="ball"/>蓝球
+		<input type="checkbox" name="ball"/>排球
+		<script>
+         //console.log($("#quan").prop("checked"));
+          $("#quan").change(function(){
+            console.log($("#quan").prop('checked'));
+//          if($("#quan").prop('checked')){
+//              $("[name=ball]").prop('checked',true);
+//          }else{
+//            $("[name=ball]").prop('checked',false);
+//          }
+          }) 
+    </script>
+	</body>
+</html>
